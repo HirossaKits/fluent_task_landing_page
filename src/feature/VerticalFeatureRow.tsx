@@ -1,6 +1,6 @@
 import className from 'classnames';
 import { useRouter } from 'next/router';
-import { Children, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 type IVerticalFeatureRowProps = {
   title: string;
