@@ -11,11 +11,11 @@ const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
+        {/* <li>
+          <Link href="">
             <a>GitHub</a>
           </Link>
-        </li>
+        </li> */}
       </NavbarTwoColumns>
     </Section>
 
@@ -23,11 +23,13 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'Introduction of my Application \n'}
-            <span className="text-primary-500">Project Management Tool</span>
+            {'Introduction of my Project \n'}
+            <span className="text-primary-500">
+              Application For Project Management
+            </span>
           </>
         }
-        description="Some features are still in production..."
+        description="Some features are still in development..."
         button={
           <Link href="https://fluent-task.com">
             <a>

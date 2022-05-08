@@ -6,7 +6,7 @@ import Link from 'next/link';
 const VerticalFeatures = () => (
   <Section
     title="Configuration of the application"
-    description="The following is a rough configuration of my application."
+    description="The following is a rough configuration of the application."
   >
     <VerticalFeatureRow
       title="Front End"
