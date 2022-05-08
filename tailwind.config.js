@@ -42,7 +42,7 @@ module.exports = {
         hero: '4.5rem',
       },
       fontFamily: {
-        Oleo: ['', ''],
+        Oleo: ['Oleo Script', 'cursive'],
       },
     },
   },
