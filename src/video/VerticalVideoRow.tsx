@@ -4,14 +4,14 @@ import { ReactNode } from 'react';
 
 type IVerticalFeatureRowProps = {
   title: string;
-  description: string;
-  image: string;
+  description?: string;
+  video: string;
   imageAlt: string;
   reverse?: boolean;
   children?: ReactNode;
 };
 
-const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
+const VerticalVideoRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
     'mt-20',
     'flex',
@@ -26,16 +26,20 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
 
   return (
     <div className={verticalFeatureClass}>
-      <div className="w-full sm:w-1/2 text-center sm:px-6">
+      <div className="w-full sm:w-2/5 text-center sm:px-6">
         <h3 className="text-3xl text-gray-900 font-semibold">{props.title}</h3>
-        <div className="mt-6 text-xl leading-9">{props.description}</div>
+        {props.description && (
+          <div className="mt-6 text-xl leading-9">{props.description}</div>
+        )}
+
         {props.children}
       </div>
-      <div className="w-full sm:w-1/2 p-6">
-        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+
+      <div className="w-full sm:w-3/5 h-96 p-6">
+        <iframe src={props.video} className="w-full h-full" />
       </div>
     </div>
   );
 };
 
-export { VerticalFeatureRow };
+export { VerticalVideoRow };
