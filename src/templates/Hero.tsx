@@ -29,11 +29,11 @@ const Hero = () => (
             </span>
           </>
         }
-        description="Some features are still in development..."
+        description="Now Beta version and some features are still in development..."
         button={
           <Link href="https://fluent-task.com">
             <a>
-              <Button xl>Go To Application</Button>
+              <Button xl>Get Started</Button>
             </a>
           </Link>
         }

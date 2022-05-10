@@ -6,9 +6,10 @@ import { VerticalVideoRow } from '../video/VerticalVideoRow';
 
 const VerticalFeatures = () => (
   <>
+    <div id="config"></div>
     <Section
-      title="Configuration of the application"
-      description="The following is the configuration of the application."
+      title="Configurations of the application"
+      description="Following is the brief configuration of the application."
     >
       <VerticalFeatureRow
         title="Front End"
@@ -76,6 +77,7 @@ const VerticalFeatures = () => (
         </Link>
       </VerticalFeatureRow>
     </Section>
+    <div id="feature"></div>
     <Section
       title="Features of the application"
       description="The following is the features of the application."
@@ -102,23 +104,39 @@ const VerticalFeatures = () => (
       >
         <div className="flex mt-6 text-xl leading-9 text-left">
           <ul className="list-disc">
-            <li>Create project with admins and member</li>
+            <li>Create projects with admins and member</li>
             <li>Check the progress on the graph</li>
-            <li>Only group admins can see all project.</li>
+            <li>Only group admin can see all projects.</li>
           </ul>
         </div>
       </VerticalVideoRow>
 
       <VerticalVideoRow
         title="Task Management"
-        video="https://www.loom.com/embed/38fb586c9b7e4ad398b483253379982c"
+        video="https://www.loom.com/embed/7d72c36e3f6f43298c06ba3f2bac6709"
         imageAlt=""
       >
         <div className="flex mt-6 text-xl leading-9 text-left">
           <ul className="list-disc">
-            <li>Create your own group</li>
-            <li>Invite users to your group</li>
-            <li>Set or unset a user to the group admin</li>
+            <li>Create tasks</li>
+            <li>Change the task status on the Kanban</li>
+            <li>Check the schedule on the Calendar</li>
+          </ul>
+        </div>
+      </VerticalVideoRow>
+
+      <VerticalVideoRow
+        title="Personalize"
+        video="https://www.loom.com/embed/b986d74bfe154e5796cffc4981342e95"
+        imageAlt=""
+        reverse
+      >
+        <div className="flex mt-6 text-xl leading-9 text-left">
+          <ul className="list-disc">
+            <li>Dark mode</li>
+            <li>Private mode</li>
+            <li>Select a language from English and Japanese</li>
+            <li>Edit your profile</li>
           </ul>
         </div>
       </VerticalVideoRow>
