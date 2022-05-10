@@ -14,35 +14,30 @@ const VerticalFeatures = () => (
       <VerticalFeatureRow
         title="Front End"
         description="Using the following language and libraries."
-        image="/assets/images/frontend.svg"
+        image="../../assets/images/frontend.svg"
         imageAlt=""
       >
         <div className="mt-5 ml-32">
           <ListItem
-            img={
-              'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png'
-            }
+            img={'/assets/images/logo/typescript.png'}
             label="Typescript"
           />
+          <ListItem img={'/assets/images/logo/react.png'} label="React" />
           <ListItem
-            img={
-              'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'
-            }
-            label="React"
-          />
-          <ListItem
-            img="https://cdn.worldvectorlogo.com/logos/create-react-app.svg"
+            img="/assets/images/logo/create-react-app.svg"
             label="Create React App"
           />
-          <ListItem
-            img="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/redux.png"
-            label="Redux"
-          />
-          <ListItem img="https://mui.com/static/logo.png" label="Material-UI" />
-          <ListItem
-            img="https://emotion.sh/static/a76dfa0d18a0536af9e917cdb8f873b9/350dd/emotion.webp"
-            label="Emotion"
-          />
+          <ListItem img="/assets/images/logo/redux.webp" label="Redux" />
+          <ListItem img="/assets/images/logo/mui.png" label="Material-UI" />
+          <ListItem img="/assets/images/logo/emotion.webp" label="Emotion" />
+        </div>
+        <div className="mt-8">
+          <a
+            className="text-xl text-primary-600 underline underline-offset-0"
+            href="https://github.com/HirossaKits/fluent_task_frontend"
+          >
+            Source code on GitHub
+          </a>
         </div>
       </VerticalFeatureRow>
       <VerticalFeatureRow
@@ -54,13 +49,22 @@ const VerticalFeatures = () => (
       >
         <div className="mt-5 ml-32">
           <ListItem
-            img={
-              'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png'
-            }
+            img={'/assets/images/logo/typescript.png'}
             label="Typescript"
           />
-          <ListItem img="/assets/images/logo/fastify.svg" label="Fastify" />
-          <ListItem img="../../assets/images/logo/prisma.png" label="Prisma" />
+          <div style={{ marginTop: 6, marginLeft: -72 }}>
+            <ListItem img="/assets/images/logo/fastify.svg" label="Fastify" />
+          </div>
+
+          <ListItem img="/assets/images/logo/prisma.png" label="Prisma" />
+        </div>
+        <div className="mt-8">
+          <a
+            className="text-xl text-primary-600 underline underline-offset-0"
+            href="https://github.com/HirossaKits/fluent_task_fastify_api"
+          >
+            Source code on GitHub
+          </a>
         </div>
       </VerticalFeatureRow>
       <VerticalFeatureRow
