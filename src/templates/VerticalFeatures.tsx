@@ -52,7 +52,7 @@ const VerticalFeatures = () => (
             img={'/assets/images/logo/typescript.png'}
             label="Typescript"
           />
-          <div style={{ marginTop: 6, marginLeft: -72 }}>
+          <div style={{ marginTop: 10, marginLeft: -72 }}>
             <ListItem img="/assets/images/logo/fastify.svg" label="Fastify" />
           </div>
 

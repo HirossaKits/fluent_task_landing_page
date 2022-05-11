@@ -8,7 +8,7 @@ const Banner = () => (
   <Section>
     <CTABanner
       title="Now Beta version and some features are still in development..."
-      subtitle="Everything is free so please try freely."
+      subtitle="Please feel free to try it."
       button={
         <Link href="https://fluent-task.com">
           <a>
