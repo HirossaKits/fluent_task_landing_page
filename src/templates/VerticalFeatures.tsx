@@ -1,7 +1,8 @@
+import Link from 'next/link';
+
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 import { ListItem } from '../listitem/ListItem';
-import Link from 'next/link';
 import { VerticalVideoRow } from '../video/VerticalVideoRow';
 
 const VerticalFeatures = () => (
@@ -31,14 +32,6 @@ const VerticalFeatures = () => (
           <ListItem img="/assets/images/logo/mui.png" label="Material-UI" />
           <ListItem img="/assets/images/logo/emotion.webp" label="Emotion" />
         </div>
-        <div className="mt-8">
-          <a
-            className="text-xl text-primary-600 underline underline-offset-0"
-            href="https://github.com/HirossaKits/fluent_task_frontend"
-          >
-            Source code on GitHub
-          </a>
-        </div>
       </VerticalFeatureRow>
       <VerticalFeatureRow
         title="Back End"
@@ -57,14 +50,6 @@ const VerticalFeatures = () => (
           </div>
 
           <ListItem img="/assets/images/logo/prisma.png" label="Prisma" />
-        </div>
-        <div className="mt-8">
-          <a
-            className="text-xl text-primary-600 underline underline-offset-0"
-            href="https://github.com/HirossaKits/fluent_task_fastify_api"
-          >
-            Source code on GitHub
-          </a>
         </div>
       </VerticalFeatureRow>
       <VerticalFeatureRow
